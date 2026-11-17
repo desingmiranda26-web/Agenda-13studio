@@ -1,0 +1,6 @@
+{
+  "name": "13 STUDIO — Agenda de Citas",
+  "description": "Agenda interactiva de citas, pagos anticipados, galería de trabajos y recordatorios 24h para 13 STUDIO (cejas, pestañas y depilación).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
