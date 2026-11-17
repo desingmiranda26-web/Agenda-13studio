@@ -158,9 +158,9 @@ export function PaymentGatewayModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="gateway-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#0B1536]/80 backdrop-blur-sm overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-[#0B1536]/80 backdrop-blur-sm overflow-y-auto"
     >
-      <div className="w-full max-w-lg bg-[#FAF8F2] text-[#0B1536] rounded-3xl shadow-2xl border border-white/25 overflow-hidden my-auto">
+      <div className="w-full max-w-lg bg-[#FAF8F2] text-[#0B1536] rounded-t-3xl sm:rounded-3xl shadow-2xl border border-white/25 overflow-hidden sm:my-auto max-h-[92vh] overflow-y-auto">
         {/* Header */}
         <div className="bg-[#0D3FE8] text-white px-6 py-5 flex items-center justify-between gap-4">
           <div className="flex items-center gap-2.5">

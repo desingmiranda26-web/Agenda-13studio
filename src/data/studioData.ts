@@ -181,12 +181,16 @@ export const TIME_SLOTS: string[] = [
   '07:00 AM',
   '08:00 AM',
   '09:00 AM',
-  '10:30 AM',
+  '10:00 AM',
+  '11:00 AM',
   '12:00 PM',
+  '01:00 PM',
   '02:00 PM',
-  '03:30 PM',
+  '03:00 PM',
+  '04:00 PM',
   '05:00 PM',
-  '06:30 PM',
+  '06:00 PM',
+  '07:00 PM',
 ];
 
 export const STUDIO_POLICIES = [
@@ -241,7 +245,7 @@ export const DEPOSIT_OPTIONS: Array<{
 
 export function getInitialSeedAppointments(): Appointment[] {
   const soonSlot = getUpcomingTimeFromNow(45);
-  const laterTodaySlot = getUpcomingTimeFromNow(210);
+  const laterTodaySlot = getUpcomingTimeFromNow(240);
   const tomorrow = getOffsetDateISO(1);
   const dayAfter = getOffsetDateISO(2);
 
@@ -297,7 +301,7 @@ export function getInitialSeedAppointments(): Appointment[] {
       referenceNote: 'Ojo de gato suave 9-12mm + cejas limpias sin quitar grosor.',
       serviceIds: ['pestanas-ojo-gato', 'cejas-epilacion'],
       date: tomorrow,
-      time: '10:30 AM',
+      time: '08:00 AM',
       totalAmount: 15,
       depositOption: 'percentage_50',
       amountPaid: 7.5,
@@ -320,7 +324,7 @@ export function getInitialSeedAppointments(): Appointment[] {
       referenceNote: 'Laminado natural bien peinado hacia arriba.',
       serviceIds: ['cejas-laminado', 'depi-bozo'],
       date: tomorrow,
-      time: '03:30 PM',
+      time: '11:00 AM',
       totalAmount: 15,
       depositOption: 'full_100',
       amountPaid: 15,
@@ -343,7 +347,7 @@ export function getInitialSeedAppointments(): Appointment[] {
       referenceNote: 'Piernas completas + axila.',
       serviceIds: ['depi-piernas', 'depi-axila'],
       date: dayAfter,
-      time: '12:00 PM',
+      time: '03:00 PM',
       totalAmount: 17,
       depositOption: 'fixed_5',
       amountPaid: 5,
