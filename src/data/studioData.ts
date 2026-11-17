@@ -178,6 +178,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 ];
 
 export const TIME_SLOTS: string[] = [
+  '07:00 AM',
+  '08:00 AM',
   '09:00 AM',
   '10:30 AM',
   '12:00 PM',
